@@ -1,7 +1,11 @@
+* {
+    color:#F9DBBB;
+}
 header{
-    height: 10vh;
-    background-color: aqua; /*fondo a determinar*/
+    background-color: #4E6E81; /*fondo a determinar*/
     display: flex;
+    font-family: 'VT323', monospace;
+    font-size: xx-large;
 }
 .logo{
     width: 50%;
@@ -34,7 +38,5 @@ header{
 }
 .piePag{
     text-align: center;
-    background-color: aqua; /*fondo a determinar*/
-    height: 8vh;
-    padding-top: 10px;
+    background-color: #4E6E81; /*fondo a determinar*/
 }
