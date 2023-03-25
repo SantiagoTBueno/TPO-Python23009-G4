@@ -1,4 +1,5 @@
 * {
+    padding: 5px;  
     color:#F9DBBB;
 }
 header{
@@ -39,4 +40,16 @@ header{
 .piePag{
     text-align: center;
     background-color: #4E6E81; /*fondo a determinar*/
+    height: 8vh;
+    padding-top: 10px;
 }
+img{
+    border-radius: 0 100px 0 100px;
+    margin: 20px;
+    padding: 50px;
+}
+
+.productos{
+    background-color: #9db9e2;
+}
+
