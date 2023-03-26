@@ -66,17 +66,17 @@ img{
 .cajaInicioSesion{
     display: inline-block;
     background-color: rgb(25, 85, 163);
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    height: 650px;
     align-items: center;
     justify-content: center; 
     align-content: center; 
     text-align: center;
-    padding: 30px;   
+
 }
 
 .tituloInicioSesion{
-    margin-top: -22px;
+    margin-top: 0px;
     font-size: 50px;  
 }
 
