@@ -40,6 +40,13 @@ header{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.direccion{
+    margin-left: 50px;
+}
+.mapa{
+    margin-left: 450px;
+    margin-bottom: 50px;
+}
 .piePag{
     text-align: center;
     background-color: #4E6E81; /*fondo a determinar*/
