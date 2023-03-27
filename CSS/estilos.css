@@ -1,7 +1,12 @@
+* {
+    padding: 5px;  
+    color:#F9DBBB;
+}
 header{
-    height: 10vh;
-    background-color: aqua; /*fondo a determinar*/
+    background-color: #4E6E81; /*fondo a determinar*/
     display: flex;
+    font-family: 'VT323', monospace;
+    font-size: xx-large;
 }
 .logo{
     width: 50%;
@@ -21,12 +26,15 @@ header{
     padding: 20px;
     margin: 30px 50px 30px 50px;
 }
+.colorTexto{
+    color: black;
+}
 .formulario{
     display: flex;
     flex-direction: column;
     margin: 10px 400px 75px 400px;
     padding: 10px 50px 10px 50px;
-    height: 35vh;
+    height: 45vh;
 }
 .boton{
     margin-top: 5px;
@@ -34,7 +42,94 @@ header{
 }
 .piePag{
     text-align: center;
-    background-color: aqua; /*fondo a determinar*/
-    height: 8vh;
+    background-color: #4E6E81; /*fondo a determinar*/
+    height: 21vh;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
+img{
+    border-radius: 0 100px 0 100px;
+    margin: 20px;
+    padding: 50px;
+}
+.productos{
+    background-color: #9db9e2;
+}
+/* PAGINA DE INICIO DE SESION*/
+.bodyCuenta{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    align-content: center; 
+    background-color: black;
+}
+.cajaInicioSesion{
+    display: inline-block;
+    background-color: rgb(25, 85, 163);
+    width: 550px;
+    height: 650px;
+    align-items: center;
+    justify-content: center; 
+    align-content: center; 
+    text-align: center;
+}
+.tituloInicioSesion{
+    margin-top: 0px;
+    font-size: 50px;  
+}
+.formularioInicioSesion{
+    display: inline-block;
+}
+.labelsInicioSesion{
+    font-size: 21px;
+}
+.imputsInicioSesion{
+    width: 500px;
+    height: 30px;
+    border-radius: 4px;
+    border: 0px;  
+    font-size: 15px;    
+}
+.recuperarContra{
+    float: right;
+}
+.iniciarSesion{
+    width: 500px;
+    height: 30px;
+    border-radius: 4px;
+    border: 0px;  
+    font-size: 15px;  
+    background-color: rgb(158, 152, 150);
+}
+.iniciarSesion:hover{   
+    color: white;
+    background-color: rgb(47, 52, 61);
+    box-shadow: 0px 4px 30px rgba(40, 41, 40, 0.979); 
+}
+.recordarmeInicioSesion{
+    display: inline-flex;
+    float: left;
+    align-items: center;
+    justify-content: center; 
+    align-content: center; 
+    text-align: center;  
+}
+.condicionesInicioSesion{
+    font-size: 17px;    
+}
+.eresNuevo{
+    color:rgb(245, 245, 245);
+}
+.registrarseInicioSesion{
+    border-radius: 4px;
+    border: 0px;  
+    width: 500px;
+    height: 30px;
+    font-size: 15px;    
+    background-color: rgb(158, 152, 150);
+}
+.registrarseInicioSesion:hover{   
+    color: white;
+    background-color: rgb(47, 52, 61);
+    box-shadow: 0px 4px 30px rgba(40, 41, 40, 0.979);
+}   
