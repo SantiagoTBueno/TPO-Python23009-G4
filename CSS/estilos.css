@@ -61,6 +61,9 @@ img{
     margin: 20px;
     padding: 50px;
 }
+img:hover{
+    background-color: #4E6E81;
+}
 .productos{
     background-color: #9db9e2;
 }
