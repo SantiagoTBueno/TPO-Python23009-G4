@@ -54,6 +54,8 @@ header{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+/*Pagina PRODUCTOS*/
+
 img{
     border-radius: 0 100px 0 100px;
     margin: 20px;
@@ -62,6 +64,7 @@ img{
 .productos{
     background-color: #9db9e2;
 }
+/*Fin pagina PRODUCTOS*/
 /* PAGINA DE INICIO DE SESION*/
 .bodyCuenta{
     display: flex;
@@ -70,6 +73,7 @@ img{
     align-content: center; 
     background-color: black;
 }
+
 .cajaInicioSesion{
     display: inline-block;
     background-color: rgb(25, 85, 163);
