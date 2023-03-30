@@ -3,7 +3,7 @@
     color:#F9DBBB;
 }
 header{
-    background-color: #4E6E81; /*fondo a determinar*/
+    background-color: #243763; /*fondo a determinar*/
     display: flex;
     font-family: 'VT323', monospace;
     font-size: xx-large;
@@ -49,7 +49,7 @@ header{
 }
 .piePag{
     text-align: center;
-    background-color: #4E6E81; /*fondo a determinar*/
+    background-color: #AD8E70; /*fondo a determinar*/
     height: 21vh;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -58,14 +58,17 @@ header{
 
 img{
     border-radius: 0 100px 0 100px;
-    margin: 20px;
-    padding: 50px;
+    margin: 40px;
+    padding: 20px;
 }
 img:hover{
-    background-color: #4E6E81;
+    background-color: #243763;
+}
+.filtrador{
+    background-color: #FF6E31;
 }
 .productos{
-    background-color: #9db9e2;
+    background-color: #FFEBB7;
 }
 /*Fin pagina PRODUCTOS*/
 /* PAGINA DE INICIO DE SESION*/
