@@ -150,3 +150,55 @@ img:hover{
     background-color: rgb(47, 52, 61);
     box-shadow: 0px 4px 30px rgba(40, 41, 40, 0.979);
 }   
+@media screen and (max-width:820px){
+    header {
+        flex-direction: column;
+        width: 100%;
+    }
+    .logo{
+        width: 100%;
+    }
+    .navegador{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+    }
+    .botonNav{
+        margin: 2px;
+    }
+    .piePag{
+        height: 15vh;
+        width: 100%;
+    }
+    .canalesInfo{
+        margin: 5px;
+    }
+    .formulario{
+        width: 80%;
+        padding: 1px;
+        margin-left: 70px;
+        height: 30%;
+    }
+    .mapa{
+        margin-left: 80px;
+    }
+}
+@media screen and (max-width:360px){
+    header{
+        font-size: x-large;
+    }
+    .piePag{
+        height: 21vh;
+    }
+    .formulario{
+        margin-left: 30px;
+    }
+    .direccion{
+        margin-left: 20px;
+    }
+    .mapa{
+        margin-left: 0px;
+        width: 90%;
+    }
+}
