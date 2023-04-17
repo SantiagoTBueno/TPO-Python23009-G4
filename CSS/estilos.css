@@ -7,30 +7,36 @@ header{
     display: flex;
     font-family: 'VT323', monospace;
     font-size: xx-large;
-    position: sticky;
-    top: 0;
-
 }
 .logo{
     width: 50%;
 }
-.navegador{
-    width: 40%;
-    padding: 20px;
+nav {
+    background-color: #243763;
+    font-family: 'VT323', monospace;
+    font-size: xx-large;
+    padding: 1vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 .botonNav{
-    margin: 20px;
+    margin: 1vh;
     text-decoration: none;
     transition: all 0.5s;
     border-radius: 10px;
-    padding: 3%;
+    padding: 1%;
 }
+
 .botonNav:hover{
     background-color: #F9DBBB;
     color: #243763;
+}
+main {
+    margin: 5px 20px 5px 5px;
+    padding-right: 60vw;
 }
 .canalesInfo{
     padding: 20px;
