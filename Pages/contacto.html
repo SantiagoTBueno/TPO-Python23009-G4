@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="shortcut icon" href="../images/retrogaming.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/481ece90e8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,18 +36,18 @@
             <fieldset class="formulario">
                 <legend class="colorTexto">Contacto</legend>
                     <label for="firstname" class="colorTexto">Nombre: </label>
-                    <input type="text" name="firstname" placeholder="Ingrese su nombre aqui..." class="campo colorTexto">
+                    <input type="text" name="firstname" placeholder="Ingrese su nombre aqui..." class="campo colorTexto" id="nombre">
                     <label for="lastname" class="colorTexto">Apellido:</label>
-                    <input type="text" name="lastname" placeholder="Ingrese su apellido aqui..." class="campo colorTexto">
+                    <input type="text" name="lastname" placeholder="Ingrese su apellido aqui..." class="campo colorTexto" id="apellido">
                     <label for="mail" class="colorTexto">Mail:</label>
-		            <input type="email" name="mail" placeholder="Ingrese su mail aquí..." class="campo colorTexto">
+		            <input type="email" name="mail" placeholder="Ingrese su mail aquí..." class="campo colorTexto" id="mail">
                     <label for="mensaje" class="colorTexto">Mensaje:</label> 
-                    <textarea name="mensaje" rows="5" cols="30" class="campo"></textarea>
-                    <button class="boton colorTexto">Enviar</button>
-                    <button class=" colorTexto">Limpiar</button>
+                    <textarea name="mensaje" rows="5" cols="30" class="campo colorTexto" id="mensaje"></textarea>
+                    <button type="button" class="boton colorTexto" id="enviar">Enviar</button>
+                    <button type="reset" class="boton colorTexto" id="limpiar">Limpiar</button>
             </fieldset>
         </form>
-        <div class="direccion">
+	<div class="direccion">
             <h3 class="colorTexto">Dirección:</h3>
             <p class="colorTexto">Av. Córdoba 2399, CABA</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.342018799499!2d-58.430601084813986!3d-34.59551198046158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7a254c28ed%3A0xdbcb64f92dc0744b!2sAv.%20C%C3%B3rdoba%204299%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1679949920202!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
@@ -59,5 +60,6 @@
         <a href="mailto:"><i class="fa-solid fa-envelope-open-text fa-3x" style="color: #190303;"></i></a>
         <p>Derechos reservados @grupo4 </p>
     </footer>
+    <script src="../js/appContacto.js"></script>
 </body>
 </html>
