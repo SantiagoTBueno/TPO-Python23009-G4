@@ -7,8 +7,67 @@ header{
     display: flex;
     font-family: 'VT323', monospace;
     font-size: xx-large;
+    position: sticky;
+    top: .1em;
 }
+
+  .respmenu .fa-bars, .respmenu .fa-times {
+    opacity: 0%;
+  }
+  .respmenu input[type="checkbox"] {
+    opacity: 0%;
+  }
+
+  @media only screen and (max-width: 820px) {
+
+    .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+      position: absolute;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      right: 0;
+      top: 0;
+      width: 48px;
+      height: 48px;
+    }
+    
+    .respmenu .fa-bars, .respmenu .fa-times {
+      font-size: 48px;
+      pointer-events: none;
+    }
+   
+    .respmenu {
+      position: relative;
+      min-height: 48px;
+    }
+    
+    .respmenu nav {
+      display: none;
+    }
+    
+    .respmenu input:checked ~ header {
+        flex-direction: column;
+        width: 100%;
+    }
+    .respmenu input:checked ~ nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 80%;
+      padding: 10px;
+    }
+        
+    .respmenu input:checked ~ .fa-times {
+      opacity: 100%;
+    }
+        
+    .respmenu input:not(:checked) ~ .fa-bars {
+      opacity: 100%;
+    }
+
+  }
 .logo{
+    font-size: xx-large;
     width: 50%;
 }
 nav {
@@ -19,8 +78,6 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    position: sticky;
-    top: 0;
 }
 .botonNav{
     margin: 1vh;
