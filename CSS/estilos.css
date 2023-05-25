@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     padding: 5px;  
     color:#F9DBBB;
@@ -215,3 +216,219 @@ img:hover{
         width: 90%;
     }
 }
+=======
+* {
+    padding: 5px;  
+    color:#F9DBBB;
+}
+header{
+    background-color: #243763; /*fondo a determinar*/
+    display: flex;
+    font-family: 'VT323', monospace;
+    font-size: xx-large;
+    position: sticky;
+    top: 0;
+
+}
+.logo{
+    width: 50%;
+}
+.navegador{
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.botonNav{
+    margin: 20px;
+    text-decoration: none;
+    transition: all 0.5s;
+    border-radius: 10px;
+    padding: 3%;
+}
+.botonNav:hover{
+    background-color: #F9DBBB;
+    color: #243763;
+}
+.canalesInfo{
+    padding: 20px;
+    margin: 30px 50px 30px 50px;
+}
+.colorTexto{
+    color: black;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 400px 75px 400px;
+    padding: 10px 50px 10px 50px;
+    height: 45vh;
+}
+.boton{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.direccion{
+    margin-left: 50px;
+}
+.mapa{
+    margin-left: 450px;
+    margin-bottom: 50px;
+}
+.piePag{
+    text-align: center;
+    background-color: #AD8E70; /*fondo a determinar*/
+    height: 21vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*Pagina PRODUCTOS*/
+
+img{
+    border-radius: 0 100px 0 100px;
+    margin: 40px;
+    padding: 20px;
+}
+img:hover{
+    background-color: #243763;
+}
+.filtrador{
+    background-color: #FF6E31;
+}
+.productos{
+    background-color: #FFEBB7;
+}
+/*Fin pagina PRODUCTOS*/
+/* PAGINA DE INICIO DE SESION*/
+.bodyCuenta{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    align-content: center; 
+    background-color: black;
+}
+
+.cajaInicioSesion{
+    display: inline-block;
+    background-color: rgb(25, 85, 163);
+    width: 550px;
+    height: 650px;
+    align-items: center;
+    justify-content: center; 
+    align-content: center; 
+    text-align: center;
+}
+.tituloInicioSesion{
+    margin-top: 0px;
+    font-size: 50px;  
+}
+.formularioInicioSesion{
+    display: inline-block;
+}
+.labelsInicioSesion{
+    font-size: 21px;
+}
+.imputsInicioSesion{
+    width: 500px;
+    height: 30px;
+    border-radius: 4px;
+    border: 0px;  
+    font-size: 15px;    
+}
+.recuperarContra{
+    float: right;
+}
+.iniciarSesion{
+    width: 500px;
+    height: 30px;
+    border-radius: 4px;
+    border: 0px;  
+    font-size: 15px;  
+    background-color: rgb(158, 152, 150);
+}
+.iniciarSesion:hover{   
+    color: white;
+    background-color: rgb(47, 52, 61);
+    box-shadow: 0px 4px 30px rgba(40, 41, 40, 0.979); 
+}
+.recordarmeInicioSesion{
+    display: inline-flex;
+    float: left;
+    align-items: center;
+    justify-content: center; 
+    align-content: center; 
+    text-align: center;  
+}
+.condicionesInicioSesion{
+    font-size: 17px;    
+}
+.eresNuevo{
+    color:rgb(245, 245, 245);
+}
+.registrarseInicioSesion{
+    border-radius: 4px;
+    border: 0px;  
+    width: 500px;
+    height: 30px;
+    font-size: 15px;    
+    background-color: rgb(158, 152, 150);
+}
+.registrarseInicioSesion:hover{   
+    color: white;
+    background-color: rgb(47, 52, 61);
+    box-shadow: 0px 4px 30px rgba(40, 41, 40, 0.979);
+}   
+@media screen and (max-width:820px){
+    header {
+        flex-direction: column;
+        width: 100%;
+    }
+    .logo{
+        width: 100%;
+    }
+    .navegador{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+    }
+    .botonNav{
+        margin: 2px;
+    }
+    .piePag{
+        height: 15vh;
+        width: 100%;
+    }
+    .canalesInfo{
+        margin: 5px;
+    }
+    .formulario{
+        width: 80%;
+        padding: 1px;
+        margin-left: 70px;
+        height: 30%;
+    }
+    .mapa{
+        margin-left: 80px;
+    }
+}
+@media screen and (max-width:360px){
+    header{
+        font-size: x-large;
+    }
+    .piePag{
+        height: 21vh;
+    }
+    .formulario{
+        margin-left: 30px;
+    }
+    .direccion{
+        margin-left: 20px;
+    }
+    .mapa{
+        margin-left: 0px;
+        width: 90%;
+    }
+}
+>>>>>>> 27f9f355683557210aa801a57514a72d6932a16a
