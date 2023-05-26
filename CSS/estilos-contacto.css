@@ -98,17 +98,6 @@ nav {
 
   }
 
-main {
-    margin: 1vh;
-    display: block;
-    height: 1300px;
-}
-
-section {
-    width: 550px;
-    float: left;
-}
-
 .canalesInfo{
     padding: 20px;
     margin: 30px 50px 30px 50px;
@@ -123,9 +112,6 @@ section {
     padding: 10px 50px 10px 50px;
     height: 45vh;
     width: 60%;
-        
-    padding-bottom: 50px;
-    margin-left: 70px;
     height: 30%;
 }
 .boton{
@@ -181,8 +167,6 @@ section {
         margin: 5px;
     }
     .formulario{
-        width: 80%;
-        
         padding-bottom: 50px;
         margin-left: 70px;
         height: 30%;
