@@ -64,6 +64,7 @@ nav {
     .respmenu .fa-bars, .respmenu .fa-times {
       font-size: 48px;
       pointer-events: none;
+      background-color: #243763;
     }
    
     .respmenu {

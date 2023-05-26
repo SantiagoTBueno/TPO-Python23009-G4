@@ -64,6 +64,7 @@ nav {
     .respmenu .fa-bars, .respmenu .fa-times {
       font-size: 48px;
       pointer-events: none;
+      background-color: #243763;
     }
    
     .respmenu {
@@ -100,7 +101,7 @@ nav {
 main {
     margin: 1vh;
     display: block;
-    height: 1100px;
+    height: 1300px;
 }
 
 aside {
@@ -171,6 +172,11 @@ section {
     margin: 10px 400px 75px 400px;
     padding: 10px 50px 10px 50px;
     height: 45vh;
+    width: 80%;
+        
+    padding-bottom: 50px;
+    margin-left: 70px;
+    height: 30%;
 }
 .boton{
     margin-top: 5px;
