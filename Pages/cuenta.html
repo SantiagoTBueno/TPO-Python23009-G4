@@ -7,36 +7,86 @@
     <title>Cuenta</title>
     <link rel="shortcut icon" href="../images/retrogaming.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/estilos.css"/>
+    <script src="https://kit.fontawesome.com/481ece90e8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
    
 </head>
+
 <body class="bodyCuenta">
+    <input type="button" value="Volver" class="botonVolver" onclick= "location.href='../index.html'" /> 
     <div class="cajaInicioSesion">
         <h1 class="tituloInicioSesion">Iniciar sesión</h1>
         <form class="formularioInicioSesion">
             <label for="email" class="labelsInicioSesion">Dirección de e-mail</label>
                 <br><br>
-            <input type="email" name="email" id="email" class="imputsInicioSesion">
+                <input type="email" name="email" id="email" class="imputsInicioSesion">
                 <br><br>
             <label for="password" class="labelsInicioSesion">Contraseña</label>
                 <br><br>
-            <input type="password" name="contraseña" id="password" class="imputsInicioSesion"> 
+                <input type="password" name="contraseña" id="password" class="imputsInicioSesion"> 
                 <br><br>
-                <a href="" class="recuperarContra">¿Olvidaste tu contraseña?</a>
-                <br><br>
-            <input type="submit" value="Iniciar sesión" class="iniciarSesion">
+                    <a href="" class="recuperarContra">¿Olvidaste tu contraseña?</a>
+
                 <br><br>
             <label class="recordarmeInicioSesion">
                 <input id="recordarme" name="recordarme" value="recordarme"
-                type="checkbox"  />Recordarme
+                type="checkbox"/>Recordarme
             </label>   
+            <br><br>
+            <label for="recordarme">
+                <input type="submit" value="Iniciar sesión" onclick="recordarmeClick()"class="iniciarSesion">
+            </label>
         </form>   
         <br><br>
         <p class="condicionesInicioSesion">Al continuar, aceptas las Condiciones
         de uso y el Aviso de privacidad de TodoGaming.</p>
 
         <p class="eresNuevo">¿Eres nuevo?</p>   
-        <button class="registrarseInicioSesion">Registrate aqui</button>                    
+        <button id="botonRegistrarse" class="registrarseInicioSesion">Registrate aqui
+
+           
+        </button>        
+            
         
     </div>  
 </body>
+
+<script>
+    const RecordarmeCheck = document.getElementById("recordarme"),
+          emailInput = document.getElementById("email"),
+          contraseñaInput = document.getElementById("password");
+
+    if (localStorage.checkbox && localStorage.checkbox !== "") {
+    RecordarmeCheck.setAttribute("checked", "checked");
+    emailInput.value = localStorage.username;
+    contraseñaInput.value = localStorage.password;
+    
+    
+    } 
+        else {
+    RecordarmeCheck.removeAttribute("checked");
+    emailInput.value = "";
+    contraseñaInput.value = "";
+    }
+
+    function recordarmeClick() {
+    if (RecordarmeCheck.checked && emailInput.value && contraseñaInput.value !== "") {
+        localStorage.username = emailInput.value;
+        localStorage.password = contraseñaInput.value;
+        localStorage.checkbox = RecordarmeCheck.value;
+        
+    } 
+        else {
+        localStorage.username = "";
+        localStorage.password = "";
+        localStorage.checkbox = "";
+    }
+    }
+
+    document.getElementById("botonRegistrarse").onclick = function () {
+        location.href = "registrarse.html";
+    };
+</script>
 </html>

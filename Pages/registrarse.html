@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="shortcut icon" href="../images/retrogaming.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/estilos.css"/>
+    <script src="https://kit.fontawesome.com/481ece90e8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+   
+</head>
+
+<body class="bodyCuenta">
+    <input type="button" value="Volver" class="botonVolver" onclick= "location.href='cuenta.html'" /> 
+    <div class="cajaInicioSesion">
+        <h1 class="tituloInicioSesion">Registrarme</h1>
+        <form class="formularioInicioSesion">
+            <label for="email" class="labelsInicioSesion">Dirección de e-mail</label>
+                <br><br>
+                <input type="email" name="email" id="email" class="imputsInicioSesion">
+                <br><br>
+            <label for="password" class="labelsInicioSesion">Contraseña</label>
+                <br><br>
+                <input type="password" name="contraseña" id="password" class="imputsInicioSesion"> 
+                <br><br>
+            <label for="checkPassword" class="labelsInicioSesion">Repetir contraseña</label>
+                <br><br>
+                <input type="password" name="repetirContraseña" id="checkPassword" class="imputsInicioSesion"> 
+                   
+           
+        <br><br>
+        <p class="condicionesInicioSesion">Al continuar, aceptas las Condiciones
+        de uso y el Aviso de privacidad de TodoGaming.</p>
+
+        <br><br>
+        <label for="Registrarme">
+            <input type="submit" value="Registrarme" onclick="registrarmeClick()" class="iniciarSesion">
+        </label>
+    </form>   
+
+
+        
+    </div>  
+</body>
+
+<script>
+    
+    function registrarmeClick(){{
+            alert("Registrado correctamente");
+        }
+    }
+</script>
+</html>
