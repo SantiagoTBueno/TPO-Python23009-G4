@@ -1,6 +1,7 @@
 * {
     padding: 5px;  
-    color:#F9DBBB;
+    color:#FF6E31;
+    
 }
 header{
     background-color: #243763; /*fondo a determinar*/
@@ -211,7 +212,7 @@ img:hover{
     align-items: center;
     justify-content: center; 
     align-content: center; 
-    background-color: black;
+    background-color: #F9DBBB;
 }
 
 .botonVolver{
@@ -229,7 +230,7 @@ img:hover{
 
 .cajaInicioSesion{
     display: inline-block;
-    background-color: rgb(25, 85, 163);
+    background-color: #243763;
     width: 550px;
     height: 650px;
     align-items: center;
@@ -249,6 +250,7 @@ img:hover{
 .labelsInicioSesion{
     font-size: 23px;
     font-family: 'VT323', monospace;
+
 }
 .imputsInicioSesion{
     color: #243763;
@@ -258,6 +260,7 @@ img:hover{
     border: 0px;  
     font-size: 17px;    
     font-family: 'VT323', monospace;
+    background-color:#F9DBBB;
 }
 .recuperarContra{
     float: right;
@@ -274,7 +277,7 @@ img:hover{
 }
 .iniciarSesion:hover{   
     color: #243763;
-    background-color: #AD8E70;
+    background-color: #F9DBBB;
     box-shadow: 0px 4px 30px rgba(40, 41, 40, 0.979); 
 }
 .recordarmeInicioSesion{
@@ -306,7 +309,7 @@ img:hover{
 }
 .registrarseInicioSesion:hover{   
     color: #243763;
-    background-color: #AD8E70;
+    background-color: #F9DBBB;
     box-shadow: 0px 4px 30px rgba(40, 41, 40, 0.979);
     transition: all 0.5s;
 }   
