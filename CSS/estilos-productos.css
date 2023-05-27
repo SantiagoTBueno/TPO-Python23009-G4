@@ -10,6 +10,7 @@ header{
     font-size: xx-large;
     position: sticky;
     top: .1em;
+    z-index: 1;
 }
 .logo{
     background-color: #243763;
@@ -64,6 +65,7 @@ nav {
     .respmenu .fa-bars, .respmenu .fa-times {
       font-size: 48px;
       pointer-events: none;
+      background-color: #243763;
     }
    
     .respmenu {
@@ -102,87 +104,6 @@ main {
     display: block;
     height: 1900px;
 }
-
-aside {
-    width: 550px;
-    float: left;
-}
-
-aside h2 {
-    text-align: center;
-}
-
-aside img {
-    width: 400px;
-    border-radius: 2px;
-    border: #FF6E31, solid;
-}
-
-section {
-    width: 550px;
-    float: left;
-}
-
-/*Slider*/
-
-.slider-frame {
-	width: 500px;
-    height: auto;
-	margin:50px auto 0;
-	overflow: hidden;
-}
-
-.slider-frame ul {
-	display: flex;
-	padding: 0;
-	width: 400%;
-	
-	animation: slide 20s infinite alternate ease-in-out;
-}
-
-.slider-frame li {
-	width: 100%;
-	list-style: none;
-}
-@keyframes slide {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
-}
-
-.canalesInfo{
-    padding: 20px;
-    margin: 30px 50px 30px 50px;
-}
-.colorTexto{
-    color: black;
-}
-.formulario{
-    display: flex;
-    flex-direction: column;
-    margin: 10px 400px 75px 400px;
-    padding: 10px 50px 10px 50px;
-    height: 45vh;
-}
-.boton{
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.direccion{
-    margin-left: 50px;
-}
-.mapa{
-    margin-left: 450px;
-    margin-bottom: 50px;
-}
 .piePag{
     text-align: center;
     background-color: #AD8E70;
@@ -207,7 +128,7 @@ section {
 
 .filtrador{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 30px 0 40px 0;
     flex-direction: column;
 }
@@ -216,7 +137,7 @@ img{
    /* border-radius: 0 50px 0 50px;
     margin: 40px;
     padding: 20px;  */
-    max-width: 100%;
+    max-width: auto;
 }
 /*
 img:hover{
@@ -230,10 +151,10 @@ img:hover{
     gap: 20px;
 }
 
-.caja-productos{
+.caja-producto{
     border-radius: 10px;
 }
-.caja-productos:hover{
+.caja-producto:hover{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
 }
 
@@ -248,18 +169,18 @@ img:hover{
     font-size: 18px;
     font-weight: 900;
 }
-.caja-productos img{
-   width: 100%;
+.caja-producto img{
+   width: auto;
    height: 300px;
    object-fit: cover;
    border-radius: 10px 10px 0 0;
    transition: all .5s;
 }
-.caja-productos figure{
+.caja-producto figure{
     overflow: hidden;
 }
 
-.caja-productos:hover img{
+.caja-producto:hover img{
     transform: scale(1.2);
 }
 /*Fin pagina PRODUCTOS*/
@@ -363,18 +284,6 @@ img:hover{
         height: 15vh;
         width: 100%;
     }
-    .canalesInfo{
-        margin: 5px;
-    }
-    .formulario{
-        width: 80%;
-        padding: 1px;
-        margin-left: 70px;
-        height: 30%;
-    }
-    .mapa{
-        margin-left: 80px;
-    }
 }
 @media screen and (max-width:360px){
     header{
@@ -382,15 +291,5 @@ img:hover{
     }
     .piePag{
         height: 21vh;
-    }
-    .formulario{
-        margin-left: 30px;
-    }
-    .direccion{
-        margin-left: 20px;
-    }
-    .mapa{
-        margin-left: 0px;
-        width: 90%;
     }
 }

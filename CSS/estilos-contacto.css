@@ -4,7 +4,7 @@
     background-color: #F9DBBB;
 }
 header{
-    background-color: #243763; /*fondo a determinar*/
+    background-color: #243763;
     display: flex;
     font-family: 'VT323', monospace;
     font-size: xx-large;
@@ -64,6 +64,7 @@ nav {
     .respmenu .fa-bars, .respmenu .fa-times {
       font-size: 48px;
       pointer-events: none;
+      background-color: #243763;
     }
    
     .respmenu {
@@ -97,67 +98,6 @@ nav {
 
   }
 
-main {
-    margin: 1vh;
-    display: block;
-    height: 1100px;
-}
-
-aside {
-    width: 550px;
-    float: left;
-}
-
-aside h2 {
-    text-align: center;
-}
-
-aside img {
-    width: 400px;
-    border-radius: 2px;
-    border: #FF6E31, solid;
-}
-
-section {
-    width: 550px;
-    float: left;
-}
-
-/*Slider*/
-
-.slider-frame {
-	width: 500px;
-    height: auto;
-	margin:50px auto 0;
-	overflow: hidden;
-}
-
-.slider-frame ul {
-	display: flex;
-	padding: 0;
-	width: 400%;
-	
-	animation: slide 20s infinite alternate ease-in-out;
-}
-
-.slider-frame li {
-	width: 100%;
-	list-style: none;
-}
-@keyframes slide {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
-}
-
 .canalesInfo{
     padding: 20px;
     margin: 30px 50px 30px 50px;
@@ -175,6 +115,9 @@ section {
 .boton{
     margin-top: 5px;
     margin-bottom: 5px;
+}
+.invalido{
+    background-color: rgba(230, 11, 11, 0.422);
 }
 .direccion{
     margin-left: 50px;
@@ -199,100 +142,7 @@ section {
     padding-left: 10px;
     padding-right: 10px;
 }
-/*Pagina PRODUCTOS*/
 
-img{
-    border-radius: 0 100px 0 100px;
-    margin: 40px;
-    padding: 20px;
-}
-img:hover{
-    background-color: #243763;
-}
-.filtrador{
-    background-color: #FF6E31;
-}
-
-/*Fin pagina PRODUCTOS*/
-/* PAGINA DE INICIO DE SESION*/
-.bodyCuenta{
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    align-content: center; 
-    background-color: black;
-}
-
-.cajaInicioSesion{
-    display: inline-block;
-    background-color: rgb(25, 85, 163);
-    width: 550px;
-    height: 650px;
-    align-items: center;
-    justify-content: center; 
-    align-content: center; 
-    text-align: center;
-}
-.tituloInicioSesion{
-    margin-top: 0px;
-    font-size: 50px;  
-}
-.formularioInicioSesion{
-    display: inline-block;
-}
-.labelsInicioSesion{
-    font-size: 21px;
-}
-.imputsInicioSesion{
-    width: 500px;
-    height: 30px;
-    border-radius: 4px;
-    border: 0px;  
-    font-size: 15px;    
-}
-.recuperarContra{
-    float: right;
-}
-.iniciarSesion{
-    width: 500px;
-    height: 30px;
-    border-radius: 4px;
-    border: 0px;  
-    font-size: 15px;  
-    background-color: rgb(158, 152, 150);
-}
-.iniciarSesion:hover{   
-    color: white;
-    background-color: rgb(47, 52, 61);
-    box-shadow: 0px 4px 30px rgba(40, 41, 40, 0.979); 
-}
-.recordarmeInicioSesion{
-    display: inline-flex;
-    float: left;
-    align-items: center;
-    justify-content: center; 
-    align-content: center; 
-    text-align: center;  
-}
-.condicionesInicioSesion{
-    font-size: 17px;    
-}
-.eresNuevo{
-    color:rgb(245, 245, 245);
-}
-.registrarseInicioSesion{
-    border-radius: 4px;
-    border: 0px;  
-    width: 500px;
-    height: 30px;
-    font-size: 15px;    
-    background-color: rgb(158, 152, 150);
-}
-.registrarseInicioSesion:hover{   
-    color: white;
-    background-color: rgb(47, 52, 61);
-    box-shadow: 0px 4px 30px rgba(40, 41, 40, 0.979);
-}   
 @media screen and (max-width:820px){
     header {
         flex-direction: column;
@@ -319,10 +169,9 @@ img:hover{
     }
     .formulario{
         width: 80%;
-        
-        padding-bottom: 50px;
+        padding: 1px;
         margin-left: 70px;
-        height: 30%;
+        heigh: 30%;
     }
     .mapa{
         margin-left: 80px;

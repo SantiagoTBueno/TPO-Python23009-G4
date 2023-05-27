@@ -33,23 +33,23 @@
             <h3 class="colorTexto">Canales de contacto:</h3>
             <ul>
                 <li class="colorTexto">Teléfono: 11 1234-5678</li>
-                <li class="colorTexto">Instagram: @nombredelnegocio</li>  <!--Cambiar una vez elegido un nombre-->
-                <li class="colorTexto">mail: contacto@nombredelnegocio.com</li>
+                <li class="colorTexto">Instagram: @TodoGaming</li>  <!--Cambiar una vez elegido un nombre-->
+                <li class="colorTexto">mail: contacto@todogaming.com</li>
             </ul>
         </div>
-        <form action="">
+        <form action="https://formspree.io/f/xyyaazvo" method="POST">
             <fieldset class="formulario">
                 <legend class="colorTexto">Contacto</legend>
                     <label for="firstname" class="colorTexto">Nombre: </label>
-                    <input type="text" name="firstname" placeholder="Ingrese su nombre aqui..." class="campo colorTexto">
+                    <input type="text" name="firstname" placeholder="Ingrese su nombre aqui..." class="campo colorTexto" id="nombre">
                     <label for="lastname" class="colorTexto">Apellido:</label>
-                    <input type="text" name="lastname" placeholder="Ingrese su apellido aqui..." class="campo colorTexto">
+                    <input type="text" name="lastname" placeholder="Ingrese su apellido aqui..." class="campo colorTexto" id="apellido">
                     <label for="mail" class="colorTexto">Mail:</label>
-		            <input type="email" name="mail" placeholder="Ingrese su mail aquí..." class="campo colorTexto">
+		            <input type="email" name="mail" placeholder="Ingrese su mail aquí..." class="campo colorTexto" id="mail">
                     <label for="mensaje" class="colorTexto">Mensaje:</label> 
-                    <textarea name="mensaje" rows="5" cols="30" class="campo"></textarea>
-                    <button class="boton colorTexto">Enviar</button>
-                    <button class="boton colorTexto">Limpiar</button>
+                    <textarea name="mensaje" rows="5" cols="30" class="campo colorTexto" id="mensaje"></textarea>
+                    <button type="submit" class="boton colorTexto" id="enviar">Enviar</button>
+                    <button type="reset" class="boton colorTexto" id="limpiar">Limpiar</button>
             </fieldset>
         </form>
 	<div class="direccion">
@@ -65,5 +65,6 @@
         <a href="mailto:"><i class="fa-solid fa-envelope-open-text fa-3x" style="color: #190303;"></i></a>
         <p>Derechos reservados @grupo4 </p>
     </footer>
+    <script src="../js/appContacto.js"></script>
 </body>
 </html>

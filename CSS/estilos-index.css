@@ -127,8 +127,6 @@ section {
     padding-left: 10px;
     padding-right: 10px;
 }
-/*Pagina PRODUCTOS*/
-
 /*Responsive*/
 @media only screen and (max-width: 960px) {
     main {
@@ -212,19 +210,6 @@ section {
         height: 25vh;
         width: 100%;
     }
-    .canalesInfo{
-        margin: 5px;
-    }
-    .formulario{
-        width: 80%;
-        padding: 1px;
-        margin-left: 70px;
-        height: 30%;
-    }
-    .mapa{
-        margin-left: 80px;
-    }
-
 }
 @media screen and (max-width:360px){
     header{
@@ -232,15 +217,5 @@ section {
     }
     .piePag{
         height: 21vh;
-    }
-    .formulario{
-        margin-left: 30px;
-    }
-    .direccion{
-        margin-left: 20px;
-    }
-    .mapa{
-        margin-left: 0px;
-        width: 90%;
     }
 }
