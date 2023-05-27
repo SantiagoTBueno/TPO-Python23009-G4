@@ -111,12 +111,14 @@ nav {
     margin: 10px 400px 75px 400px;
     padding: 10px 50px 10px 50px;
     height: 45vh;
-    width: 60%;
-    height: 30%;
+    width: 70%;
 }
 .boton{
     margin-top: 5px;
     margin-bottom: 5px;
+}
+.invalido{
+    background-color: rgba(230, 11, 11, 0.422);
 }
 .direccion{
     margin-left: 50px;
@@ -167,9 +169,10 @@ nav {
         margin: 5px;
     }
     .formulario{
-        padding-bottom: 50px;
+        width: 80%;
+        padding: 1px;
         margin-left: 70px;
-        height: 30%;
+        heigh: 30%;
     }
     .mapa{
         margin-left: 80px;
