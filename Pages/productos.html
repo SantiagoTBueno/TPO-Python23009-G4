@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/retrogaming.ico" type="image/x-icon">
-    <link rel="stylesheet" href="..\CSS\estilos.css">
+    <link rel="stylesheet" href="..\CSS\estilos-productos.css">
     <title>Productos</title>
     <script src="https://kit.fontawesome.com/481ece90e8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,28 +14,136 @@
 </head>
 <body>
     <header>
-        <div class="logo">Nombre del negocio</div>
-        <nav class="navegador">
+        <h1 class="logo">Retrostore</h1>
+        <div class="respmenu">
+            <input type="checkbox">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+            <nav class="navegador">    
             <a href="../index.html" class="botonNav">Principal</a>
             <a href="#" class="botonNav">Productos</a>
             <a href="contacto.html" class="botonNav">Contacto</a>
             <a href="cuenta.html" class="botonNav">Cuenta</a>
-        </nav>
+            </nav>
+        </div>
     </header>
-    <main>
         <div class="filtrador">
+            <fieldset>
+            <h3>Buscador:</h3>
+            <input type="text" placeholder="Ingrese nombre o palabra clave de producto.." class="buscador">
+            <label for="envio">Envio gratis:</label>
+            <input type="checkbox" name="Envio" id="envio">
+            <div class="contenedor-icono">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                  </svg>         
+                </fieldset>        
+            </div>
+            <!--
             <fieldset>
                 <legend>Buscador:</legend>
                 <input type="text" placeholder="Ingrese nombre o palabra clave de producto.." class="buscador">
                 <label for="envio">Envio gratis:</label>
                 <input type="checkbox" name="Envio" id="envio">
             </fieldset>
+            -->
         </div>
         <div class="productos">
-        <p><img src="../images/Auris1.png" alt="netbook" width="300" height="300" ><img src="../images/ComboMT.png" alt="" width="300" height="300"> <img src="../images/Auris3.jpg" alt="" width="300" height="300"></p>
+            <div class="caja-producto">
+                <figure>
+                <img src="../images/Auris1.png" alt="netbook" >
+                </figure>
+                <div class="info-producto">
+                    <h2>Auriculares</h2>
+                    <p class="precio">35.000$</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="caja-producto">
+                <figure>
+                <img src="../images/ComboMT.png" alt="netbook">
+                </figure>
+                <div class="info-producto">
+                    <h2>Combo Teclado-Mouse</h2>
+                    <p class="precio">50.000$</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="caja-producto">
+                <figure>
+                <img src="../images/Auris3.jpg" alt="netbook" >
+                </figure>
+                <div class="info-producto">
+                    <h2>Auriculares</h2>
+                    <p class="precio">32.000$</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="caja-producto">
+                <figure>
+                <img src="../images/Pcgamer.jpg" alt="netbook" >
+                </figure>
+                <div class="info-producto">
+                    <h2>Pc gama alta</h2>
+                    <p class="precio">250.000$</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="caja-producto">
+                <figure>
+                <img src="../images/Escritorio.jpg" alt="netbook" >
+                </figure>
+                <div class="info-producto">
+                    <h2>Escritorio gamer</h2>
+                    <p class="precio">120.000$</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="caja-producto">
+                <figure>
+                <img src="../images/Auris2.jpg" alt="netbook" >
+                </figure>
+                <div class="info-producto">
+                    <h2>Auriculares</h2>
+                    <p class="precio">29.000$</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="caja-producto">
+                <figure>
+                <img src="../images/Joystick.jpg" alt="netbook" >
+                </figure>
+                <div class="info-producto">
+                    <h2>Joystick xbox</h2>
+                    <p class="precio">34.000$</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="caja-producto">
+                <figure>
+                <img src="../images/Joystick2.jpg" alt="netbook" >
+                </figure>
+                <div class="info-producto">
+                    <h2>Joystick para pc</h2>
+                    <p class="precio">15.900$</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="caja-producto">
+                <figure>
+                <img src="../images/Joystick3.jpg" alt="netbook" >
+                </figure>
+                <div class="info-producto">
+                    <h2>Joystick para pc</h2>
+                    <p class="precio">13.000$</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <!--
+        <p><img src="../images/Joystick.jpg" alt="netbook" width="300" height="300" ><img src="../images/Joystick2.jpg" alt="" width="300" height="300"> <img src="../images/Joystick3.jpg" alt="" width="300" height="300"></p>
         <p><img src="../images/Pcgamer.jpg" alt="netbook" width="300" height="300" ><img src="../images/Escritorio.jpg" alt="" width="300" height="300"> <img src="../images/Auris2.jpg" alt="" width="300" height="300"></p>
+                -->
         </div>
-    </main>
 
     <footer class="piePag">
         <p>Canales de contacto:</p>
